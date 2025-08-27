@@ -2,6 +2,12 @@
 
 **Safely test your applications with real production traffic** without impacting your users.
 
+## Requirements
+
+- Java 21+
+- Gradle 8+
+- Node.js 18+ (for test destinations)
+
 HTTP Shadower is a Spring Boot application that intercepts production HTTP requests and intelligently forwards them to multiple environments (DEV/ITG/STAGE) while ensuring your users always receive responses from your production system.
 
 ### **Test with Real Production Traffic**
@@ -502,7 +508,3 @@ When you run these commands:
 - **Response format**: JSON showing which app responded and all the request details that were forwarded
 
 The responses will indicate which destination app provided the response and include all the headers, body, and parameters that were forwarded.
-
-## License
-
-This project is licensed under the MIT License.
