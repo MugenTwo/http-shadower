@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: http-shadower
+
+server:
+  port: 8080
+
+shadower:
+  destinations:
+    - name: app1
+      url: http://localhost:3001
+      enabled: true
+      responseSource: true
+    - name: app2
+      url: http://localhost:3002
+      enabled: true
+      responseSource: false
+    - name: app3-error-simulator
+      url: http://localhost:3003
+      enabled: true
+      responseSource: false
+
+logging:
+  level:
+    com.mugentwo.http_shadower: DEBUG
