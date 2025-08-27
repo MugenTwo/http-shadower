@@ -1,6 +1,9 @@
 spring:
   application:
     name: http-shadower
+  threads:
+    virtual:
+      enabled: true
 
 server:
   port: 8080
